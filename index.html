@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pop up 3 times and you put 3 number
+        var a = prompt("Enter value of the 1st side of the triangle")
+
+        var b = prompt("Enter value of the 2nd side of the triangle")
+
+        var c = prompt("Enter value of the 3rd side of the triangle")
+
+        //if abc is not a number it will say input numbers ony
+        if(isNaN(a)||isNaN(b)||isNaN(c)){
+            alert("Input NUMBERS only")
+        }
+        //if its a number, it will read the function WatTriangle
+        else WatTriangle(a,b,c)
+
+
+        //function to know if its equilateral, isoceles or scalene
+        function WatTriangle(a,b,c){
+        if(a==b && b==c && a==c){
+            window.alert("Your triangle is an equilateral triangle")
+        }
+        else if(a==b || b==c || a==c){
+            window.alert("Your triangle is an isoceles triangle")
+        }
+        else if(a!=b && b!=c && a!=c){
+            window.alert("Your triangle is an scalene triangle")
+        }
+    }
+
+
+        </script>
+</body>
+</html>
